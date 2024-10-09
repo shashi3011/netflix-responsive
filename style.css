@@ -1,0 +1,799 @@
+body{
+    margin: none;
+    font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/*bigger screen*/
+@media(min-width:990px){
+    .hero{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-left: none;
+    }
+    .hero-img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        transform: scale(1.4);
+    }
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8) 20%, rgba(55, 47, 47, 0) 50%, rgba(0,0,0,0.8) 100%);
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        height: 800px;
+    }
+    .content{
+        position: absolute;
+        top:0;
+        color: white;
+        width: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;}
+    .title{
+        font-size: 50px;
+    }
+    .price{
+        font-size: 25px;
+    }
+    .nav{
+        position:absolute;
+        top:0%;
+        display:flex;
+        width: 1000px;
+        justify-content: space-between;
+        top:5%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    .logo{
+        padding: 10px;
+        width: 150px;
+        height: 40px;
+    }
+    .nav-flex{
+        display:flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .signin-btn{
+        font-weight: bold;
+        height:39px;
+        width:100px;
+        padding:7px;
+        color:white;
+        background-color:red;
+        border-radius: 8px;
+        
+    }
+    .en-btn{
+        font-weight: bold;
+        height:35px;
+        width:130px;
+        box-sizing: border-box;
+        padding:5px;
+        color:white;
+        background-color:rgba(0, 0, 0, 0.366);
+        border-radius: 8px;
+        border:2px solid lightgray;
+    }
+    .email{
+        width: 400px;
+        padding:15px ;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.221);
+    }
+    .content-btn{
+        border-radius: 8px;
+        width: 250px;
+        padding:15px ;
+        color:white;
+        background-color: red;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        display: flex;
+        gap:5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    .content-flex{
+        display: flex;
+        gap: 10px;
+    
+    }
+    
+    section{
+        border-bottom: 6px solid #eeeeee46;
+    }
+    .faqs{
+        color:white;
+        text-align: center;
+        
+        
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 120px;
+        padding-left: 120px;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;    overflow: hidden;
+        box-sizing: border-box;
+        margin: none;
+    }
+    .faq-heading{
+        font-size: 45px;
+    }
+    .faq-btn{
+        width:100%;
+        height: 70px;
+        background-color: rgb(45, 45, 45);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .5s;
+        font-size:25px ;
+        padding:40px;
+        border:none;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .faq-btn:hover{
+        background-color:rgba(118, 112, 112, 0.51); ;
+    }
+    .sec-page{
+        color:white;
+        
+        
+        
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 120px;
+        padding-left: 120px;
+        font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;    
+        box-sizing: border-box;
+        margin: none;
+        
+    }
+    .opt{
+        padding:10px 30px;
+        background-color: rgba(32, 30, 30, 0.396);
+        color: white;
+        border-radius: 5px;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .parent-img{
+         
+        border-radius: 12px;
+        border: none;
+        height: 280px;
+        object-fit: cover;
+        transition: .5s;
+    }
+    .s-btn{
+        border: none;
+        background-color: black;
+        border-radius: 12px;
+        
+    }
+    .suggestions{
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        flex-shrink: 0;
+        overflow-x: auto;
+        height: 350px;
+    }
+    .suggestions::-webkit-scrollbar{
+        display: none;
+    }
+    .points{
+        display: flex;
+        gap: 30px;
+        
+    }
+    .p1{
+        height: 350px;
+        width: 350px;
+        border-radius: 12px;
+        background: rgba(109, 4, 175, 0.468);
+    background: linear-gradient(19deg, rgba(110,4,175,1) 0%, rgba(83,0,49,1) 0%, rgba(25,8,124,1) 100%);
+        border: none;
+        padding: 10px;
+    
+    }
+    .svg{
+        display: flex;
+        justify-content: right;
+        justify-content: baseline;
+    }
+    .svg1{
+        display: flex;
+        justify-content: right;
+        justify-content: baseline;
+    }
+    .svg2{
+        display: flex;
+        justify-content: right;
+        justify-content: baseline;
+    }
+    .reasons{
+        margin-top: 50px;
+    }
+    .content-btn:hover{
+        background-color:rgba(255, 0, 0, 0.845); ;
+    }
+    .signin-btn:hover{
+        background-color:rgba(255, 0, 0, 0.845); ;
+    }
+    .en-btn:hover{
+        background-color:rgba(118, 112, 112, 0.51);
+    }
+    .opt:hover{
+        background-color:rgba(118, 112, 112, 0.51);
+    }
+    .parent-img:hover{
+        height: 300px;
+    }
+    .email:focus{
+        outline: 2px solid white;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*medium screen*/
+@media(min-width:586px) and (max-width:989px){
+    .hero{
+        width: 100%;
+        
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-left: none;
+        height: 100vh;
+    }
+    .hero-img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        transform: scale(1.2);
+    }
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8) 20%, rgba(55, 47, 47, 0) 50%, rgba(0,0,0,0.8) 100%);
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        height: 800px;
+    }
+    .content{
+        position: absolute;
+        top:0;
+        width: 585px;
+        color: white;
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;}
+    .title{
+        font-size: 5vmax;
+    }
+    .price{
+        font-size: 25px;
+    }
+    .nav{
+        position:absolute;
+        top:0;
+        display:flex;
+        width: calc(100vw - 80px);
+        justify-content: space-between;
+        top:5%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    .logo{
+        padding: 10px;
+        width: 150px;
+        height: 40px;
+    }
+    .nav-flex{
+        display:flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .signin-btn{
+        font-weight: bold;
+        height:39px;
+        width:100px;
+        padding:7px;
+        color:white;
+        background-color:red;
+        border-radius: 8px;
+        
+    }
+    .en-btn{
+        font-weight: bold;
+        height:35px;
+        width:130px;
+        box-sizing: border-box;
+        padding:5px;
+        color:white;
+        background-color:rgba(0, 0, 0, 0.366);
+        border-radius: 8px;
+        border:2px solid lightgray;
+    }
+    .email{
+        width: 300px;
+        padding:15px ;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.221);
+    }
+    .content-btn{
+        border-radius: 8px;
+        width: 180px;
+        padding:15px ;
+        color:white;
+        background-color: red;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        display: flex;
+        gap:5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    .content-flex{
+        display: flex;
+        gap: 10px;
+    
+    }
+    
+    section{
+        border-bottom: 6px solid #eeeeee46;
+    }
+    .faqs{
+        color:white;
+        text-align: center;
+        
+        
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;    overflow: hidden;
+        box-sizing: border-box;
+        margin: none;
+    }
+    .faq-heading{
+        font-size: 30px;
+    }
+    .faq-btn{
+        width:100%;
+        height: 40px;
+        background-color: rgb(45, 45, 45);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .5s;
+        font-size:20px ;
+        padding:30px;
+        border:none;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .faq-btn:hover{
+        background-color:rgba(118, 112, 112, 0.51); ;
+    }
+    .sec-page{
+        color:white;
+        
+        
+        
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;    
+        box-sizing: border-box;
+        margin: none;
+        
+    }
+    .opt{
+        width: 100%;
+        padding:10px ;
+        background-color: rgba(32, 30, 30, 0.396);
+        color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .parent-img{
+        
+        border-radius: 12px;
+        border: none;
+        width: 125px;
+        object-fit: cover;
+        transition: .5s;
+    }
+    .s-btn{
+        border: none;
+        background-color: black;
+        border-radius: 12px;
+        
+        
+    }
+    .suggestions{
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+        overflow-x: auto;
+        height: 200px;
+    }
+    .suggestions::-webkit-scrollbar{
+        display: none;
+    }
+    .points{
+        
+        
+    }
+    .p1{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 12px;
+        background: rgba(109, 4, 175, 0.468);
+        background: linear-gradient(19deg, rgba(110,4,175,1) 0%, rgba(83,0,49,1) 0%, rgba(25,8,124,1) 100%);
+        border: none;
+        padding: 10px;
+        
+    
+    }
+    .svg{
+        display: flex;
+        justify-content: right;
+        
+    }
+    .svg1{
+        display: flex;
+        justify-content: right;
+        
+    }
+    .svg2{
+        display: flex;
+        justify-content: right;
+        
+    }
+    .reasons{
+        margin-top: 50px;
+    }
+    .content-btn:hover{
+        background-color:rgba(255, 0, 0, 0.845); ;
+    }
+    .signin-btn:hover{
+        background-color:rgba(255, 0, 0, 0.845); ;
+    }
+    .en-btn:hover{
+        background-color:rgba(118, 112, 112, 0.51);
+    }
+    .opt:hover{
+        background-color:rgba(118, 112, 112, 0.51);
+    }
+    .parent-img:hover{
+        width: 135px;
+    }
+    .email:focus{
+        outline: 2px solid white;
+    }
+
+}
+
+
+/*smaller screen*/
+@media(max-width:586px){
+    .hero{
+        width: 100%;
+        height: 725px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-left: none;
+    }
+    .hero-img{
+        width: 100%;
+        height:100%;
+        transform: scale(1.4);
+        object-fit: cover;
+    }
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8) 20%, rgba(55, 47, 47, 0) 50%, rgba(0,0,0,0.8) 100%);
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        
+        height: 745px;
+    }
+    .content{
+        position: absolute;
+        top:0;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;}
+    .title{
+        font-size: 5vmax;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .nav{
+        position:absolute;
+        top:0%;
+        display:flex;
+        width: calc(100vw - 40px);
+        justify-content: space-between;
+        top:5%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    .logo{
+        padding: 10px;
+        width: 150px;
+        height: 40px;
+    }
+    .nav-flex{
+        
+        gap: 10px;
+        align-items: center;
+    }
+    .signin-btn{
+        font-weight: bold;
+        height:39px;
+        width:70px;
+        padding:7px;
+        color:white;
+        background-color:red;
+        border-radius: 8px;
+        
+    }
+    .en-btn{
+        font-weight: bold;
+        height:35px;
+        width:90px;
+        box-sizing: border-box;
+        padding:5px;
+        color:white;
+        background-color:rgba(0, 0, 0, 0.366);
+        border-radius: 8px;
+        border:2px solid lightgray;
+    }
+    .email{
+        width: calc(100vw - 120px);
+        padding:15px ;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.221);
+        margin-bottom: 10px;
+        
+    }
+    .email:focus{
+        outline: 2px solid white;
+    }
+
+    .content-btn{
+        border-radius: 8px;
+        width: 170px;
+        padding:10px ;
+        color:white;
+        background-color: red;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        display: flex;
+        gap:5px;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        margin-bottom: 10px;
+
+    }
+    .content-btn:hover{
+        background-color:rgba(255, 0, 0, 0.845); ;
+    }
+    .signin-btn:hover{
+        background-color:rgba(255, 0, 0, 0.845); ;
+    }
+    .en-btn:hover{
+        background-color:rgba(118, 112, 112, 0.51);
+    }
+    .opt:hover{
+        background-color:rgba(118, 112, 112, 0.51);
+    }
+    .parent-img:hover{
+        width: 135px;
+    }
+    .haha{
+        display: flex;
+        justify-content: center;
+    }
+    .content-flex{
+        text-align: center;
+        width: 100%;
+        padding: 22px;
+        flex-wrap: wrap;
+    }
+    
+    section{
+        border-bottom: 6px solid #eeeeee46;
+    }
+    .faqs{
+        color:white;
+        text-align: center;
+        
+        
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;    overflow: hidden;
+        box-sizing: border-box;
+        margin: none;
+    }
+    .faq-heading{
+        font-size: 25px;
+    }
+    .faq-btn{
+        width:100%;
+        height: 40px;
+        background-color: rgb(45, 45, 45);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .5s;
+        font-size:16px ;
+        padding:20px;
+        border:none;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .faq-btn:hover{
+        background-color:rgba(118, 112, 112, 0.51); 
+    }
+    .sec-page{
+        color:white;
+        
+        
+        
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;    
+        box-sizing: border-box;
+        margin: none;
+        
+    }
+    .opt{
+        width: 100%;
+        padding:10px ;
+        background-color: rgba(32, 30, 30, 0.396);
+        color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .parent-img{
+        
+        border-radius: 12px;
+        border: none;
+        width: 125px;
+        object-fit: cover;
+        transition: .5s;
+    }
+    .s-btn{
+        border: none;
+        background-color: black;
+        border-radius: 12px;
+        
+        
+    }
+    .suggestions{
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+        overflow-x: auto;
+        height: 200px;
+    }
+    .suggestions::-webkit-scrollbar{
+        display: none;
+    }
+    .points{
+        
+        
+    }
+    .p1{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 12px;
+        background: rgba(109, 4, 175, 0.468);
+        background: linear-gradient(19deg, rgba(110,4,175,1) 0%, rgba(83,0,49,1) 0%, rgba(25,8,124,1) 100%);
+        border: none;
+        padding: 10px;
+        
+    
+    }
+    .svg{
+        display: flex;
+        justify-content: right;
+        
+    }
+    .svg1{
+        display: flex;
+        justify-content: right;
+        
+    }
+    .svg2{
+        display: flex;
+        justify-content: right;
+        
+    }
+    .reasons{
+        margin-top: 50px;
+    }
+}
